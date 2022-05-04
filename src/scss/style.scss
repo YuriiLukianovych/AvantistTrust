@@ -1,16 +1,6 @@
-@import './layout/_header';
+// base
+@import './base/commons';
+@import './base/container';
 
-
-body{
-    font-family: Veles, sans-serif;
-    font-weight: 700;
-    background-color: #cdcdcc;
-    span{
-        color: #390c03;
-    }
-}
-
-img{
-    display: block;
-    max-width: 800px;
-}
+// utils
+@import './utils/display-none';
