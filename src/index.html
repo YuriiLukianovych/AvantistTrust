@@ -17,8 +17,45 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <svg width="70" height="40" class="logo-icon">
+                    <use href="@img/svgicons/sprite/svg-sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <div class="menu-container">
+                <nav class="site-navigation">
+                    <ul class="menu-list">
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">О нас</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Преимущества</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Тарифы и калькулятор</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Функционал</a></li>
+                        <li class="menu-list__item"><a href="#" class="menu-list__link">Реферальная программа</a></li>
+                    </ul>
+                </nav>
+                <button class="lang-btn" type="button">en</button>
+                <ul class="store-list">
+                    <li class="store-list__item">
+                        <svg class="store-icon">
+                            <use href="@img/svgicons/sprite/svg-sprite.svg#google-play"></use>
+                        </svg>
+                    </li>
+                    <li class="store-list__item">
+                        <svg class="store-icon">
+                            <use href="@img/svgicons/sprite/svg-sprite.svg#app-store"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <script src="js/app.min.js"></script>
 </body>
