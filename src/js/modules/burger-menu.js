@@ -9,5 +9,6 @@ export const burgerMenu = () => {
         burgerBtn.classList.toggle('is-open')
         langBtn.classList.toggle('is-visible')
         menu.classList.toggle('is-open')
+        document.body.classList.toggle('is-blocked')
     })
 }
