@@ -37,19 +37,19 @@
                 <nav class="site-navigation">
                     <ul class="menu-list">
                         <li class="menu-list__item">
-                            <a href="#about-us" class="menu-list__link">О нас</a>
+                            <a href="#about-us" class="menu-list__link" data-link>О нас</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#advantages" class="menu-list__link">Преимущества</a>
+                            <a href="#advantages" class="menu-list__link" data-link>Преимущества</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#calc" class="menu-list__link">Тарифы и калькулятор</a>
+                            <a href="#calc" class="menu-list__link" data-link>Тарифы и калькулятор</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#functional" class="menu-list__link">Функционал</a>
+                            <a href="#functional" class="menu-list__link" data-link>Функционал</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#ref-program" class="menu-list__link">Реферальная программа</a>
+                            <a href="#ref-program" class="menu-list__link" data-link>Реферальная программа</a>
                         </li>
                     </ul>
                 </nav>
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="container">
                 <h2 class="about-us__title">Что такое <span class="avantis">Avantis</span><span class="trust"></span>
                     Trust?</span></h2>
@@ -192,9 +192,131 @@
                 </ul>
             </div>
         </section>
-        <div class="advantages">
-            <div class="container"></div>
-        </div>
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <div class="advantages__image">
+                    <h2 class="title">Преимущества инвестирования
+                        вместе с <br><span class="avantis">Avantis</span><span class="trust"> Trust</span></h2>
+                    <picture>
+                        <source srcset="
+                                    @img/advantages/hand-screen-mobile.webp  1x,
+                                    @img/advantages/hand-screen-mobile@2x.webp  2x
+                                " media="(min-width: 320px) and (max-width: 767px)" type="image/webp" />
+                        <source srcset="
+                                    @img/advantages/hand-screen-mobile.png  1x,
+                                    @img/advantages/hand-screen-mobile@2x.png  2x
+                                " media="(min-width: 320px) and (max-width: 767px)" />
+
+                        <!-- <source srcset="
+                                    @img/img1-tablet.webp  1x,
+                                    @img/img1-tablet@2x.webp  2x
+                                " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                        <source srcset="
+                                    @img/img1-tablet.jpg  1x,
+                                    @img/img1-tablet@2х.jpg  2x
+                                " media="(min-width: 768px) and (max-width: 1199px)" /> -->
+
+                        <!-- <source srcset="
+                                    @img/img-desk.webp  1x,
+                                    @img/img1-desk@2x.webp  2x
+                                " media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="
+                                    @img/img1-desk.jpg  1x,
+                                    @img/img1-desk@2х.jpg  2x
+                                " media="(min-width: 1200px)" /> -->
+
+                        <img src="@img/advantages/hand-screen-mobile.png" alt="tablet in hand">
+                    </picture>
+                </div>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#01"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Лучшие трейдеры и аналитики</h3>
+                            <p class="advantages__text">Avantis проводит тщательный отбор всех сотрудников, HR совместно
+                                с нашим отделом андеррайтинга исследуют каждого
+                                кандидата по более 100 параметрам.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#02"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Прозрачность</h3>
+                            <p class="advantages__text">Мы предоставляем обширную документальную базу, где объяснены все
+                                юридические аспекты взаимодействия Avantis и её
+                                партнёров.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#03"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Удобство пользовательского интерфейса
+                            </h3>
+                            <p class="advantages__text">Мы отказались от платформы. В связи с ненадобностью наших
+                                инвесторов непосредственно участвовать в торгах, команда
+                                Avantis создала Telegram-бот, который будет иметь все необходимые инструменты для
+                                контроля своих финансов.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#04"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Низкие транзакционные издержки
+                            </h3>
+                            <p class="advantages__text">Децентрализация процесса обмена крипто активами, позволяет
+                                снизить комиссии, благодаря исключению посредников.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#05"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Быстрые финансовые операции
+                            </h3>
+                            <p class="advantages__text">Операции в блокчейне используются практически мгновенно, а
+                                системы смарт контрактов автоматизируют остальные процессы.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="@img/advantages/sprite.svg#06"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Диверсификация рисков</h3>
+                            <p class="advantages__text">Avantis Trust позволяет вложить свои средства не в одну
+                                стратегию, а в несколько. Таким образом, распределение
+                                (диверсификация) дает возможность получать большую прибыль и снижает риск проседания
+                                капитала.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <script src="js/app.min.js"></script>
