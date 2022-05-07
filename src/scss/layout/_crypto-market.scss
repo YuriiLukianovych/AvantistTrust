@@ -1,0 +1,88 @@
+.crypto-market {
+   padding-bottom: 12px;
+   .container {
+      background: url('@img/crypto-market/m-coin.svg') left 30px bottom -10px no-repeat,
+         url('@img/crypto-market/l-coin.svg') right 15px bottom 350px no-repeat,
+         url('@img/crypto-market/graphik-mobile.svg') center bottom 260px
+            no-repeat;
+   }
+   &__note {
+      font-size: 14px;
+      line-height: 96.1%;
+      color: #b6b6dd;
+      margin-top: 6px;
+      margin-bottom: 60px;
+      padding-left: 20px;
+   }
+
+   &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 480px;
+      margin-left: -7px;
+      margin-top: -7px;
+   }
+
+   &__item {
+      position: relative;
+      background: radial-gradient(
+         119.49% 119.49% at 2.96% 5.05%,
+         rgba(101, 101, 121, 1) 0%,
+         rgba(40, 40, 57, 1) 100%
+      );
+      box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(21px);
+      border-radius: 12px;
+      padding: 45px 7px 10px;
+      width: calc(100% / 2 - 7px);
+      margin-left: 7px;
+      margin-top: 7px;
+      &:nth-child(3) {
+         margin-top: 80px;
+      }
+      &::before {
+         content: '';
+         display: block;
+         width: 20px;
+         height: 20px;
+         position: absolute;
+         left: 11px;
+         top: 16px;
+         background: url('@img/crypto-market/up-arrow.svg') center center
+            no-repeat;
+      }
+   }
+
+   &__numbers {
+      background: #262637;
+      box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.15),
+         inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      padding: 14px;
+
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1;
+      text-align: center;
+
+      span {
+         font-weight: 400;
+         font-size: 40px;
+         line-height: 1;
+      }
+      &.accent {
+         color: #d46bfe;
+      }
+   }
+
+   &__info {
+      font-size: 12px;
+      line-height: 96.1%;
+      color: #b6b6dd;
+   }
+   .title {
+      font-size: 28px;
+      line-height: 42px;
+   }
+}
