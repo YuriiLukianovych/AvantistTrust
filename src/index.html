@@ -317,7 +317,7 @@
                 </ul>
             </div>
         </section>
-        <section class="tariffs">
+        <section class="tariffs" id="tariffs">
             <div class="container">
                 <h2 class="title">Инвестиционные планы <span class="avantis">Avantis</span><span
                         class="trust">Trust</span></h2>
@@ -365,11 +365,43 @@
                     <div class="calculator__body">
                         <form action="" class="calculator__form">
                             <h4 class="calculator__caption">Выберите период</h4>
-                            <input type="radio" name="" id="">
-                            <input type="radio" name="" id="">
-                            <input type="radio" name="" id="">
+                            <div class="calculator__tariff">
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff50">
+                                <label class="calculator__input-radio-label" for="tariff50">50 дней</label>
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff100">
+                                <label class="calculator__input-radio-label" for="tariff100">100 дней</label>
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff365">
+                                <label class="calculator__input-radio-label" for="tariff365">365 дней</label>
+                            </div>
+                            <div class="calculator__total">
+                                <input type="number" name="total" id="total">
+                                <label for="total" class="calculator__input-number-label">Введите сумму
+                                    инвестиции</label>
+                            </div>
+                            <div class="calculator__input-range-wrapper">
+                                <label for="input-range" class="calculator__input-range-label">Быстрый выбор
+                                    суммы</label>
+                                <p class="calculator__input-range-value"><span>252</span> usd</p>
+                                <input class="calculator__input-range" type="range" name="input-range" id="input-range"
+                                    value="252" min="100" max="1000000">
+                                <p class="range__min-value"><span>100</span> usd</p>
+                                <p class="range__max-value"><span>1000000</span> usd</p>
+                            </div>
+                            <button class="calculator__submit" type="submit">Инвестировать сейчас</button>
                         </form>
-                        <div class="calculator__result"></div>
+                        <div class="calculator__result result">
+                            <h4 class="calculator__caption">Предварительный расчет</h4>
+                            <ul class="result__list">
+                                <li class="result__item"><span>15</span>$/ в день</li>
+                                <li class="result__item"><span>150</span>$/ в неделю</li>
+                                <li class="result__item"><span>1500</span>$/ в месяц</li>
+                                <li class="result__item"><span>15000</span>$/в год</li>
+                            </ul>
+                            <div class="result__footer">
+                                <p class="result__procent-label">Ежедневный процент</p>
+                                <strong class="result__procent">1,2%</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
