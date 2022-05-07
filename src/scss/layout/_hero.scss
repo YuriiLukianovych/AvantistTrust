@@ -1,0 +1,105 @@
+.hero {
+   padding-top: 92px;
+   background: rgb(61, 32, 112);
+   background: radial-gradient(
+      ellipse at top left,
+      rgba(61, 32, 112, 1) 0%,
+      rgba(50, 39, 81, 1) 60%
+   );
+   &__info {
+   }
+
+   &__title {
+   }
+
+   &__text {
+      font-size: 14px;
+      line-height: 21px;
+
+      color: #b6b6dd;
+   }
+
+   &__image {
+      background-image: url('@img/hero/coin-left-mobile.png'),
+         url('@img/hero/coin-right-mobile.png'),
+         url('@img/hero/vector-mobile.svg'), url('@img/hero/bg-safe-mobile.png');
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: left 10px top 200px, right 11px top 40px,
+         center bottom 30px, center center;
+      img {
+         max-width: 100%;
+      }
+   }
+
+   &__apps {
+   }
+
+   &__advantages {
+      margin-top: 41px;
+   }
+}
+.container {
+}
+
+.apps {
+   max-width: 300px;
+   display: flex;
+   align-items: start;
+   gap: 20px;
+   &__left-side {
+      flex-basis: 140px;
+   }
+   &__note {
+      font-size: 12px;
+      line-height: 96.1%;
+      color: #8a8aa4;
+   }
+
+   &__qr {
+      flex-basis: 140px;
+   }
+}
+.app-store {
+   margin-bottom: 6px;
+}
+.google-play {
+   margin-bottom: 14px;
+}
+.advantages-list {
+   max-height: 350px;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   margin-top: -6px;
+   margin-left: -6px;
+   &__item {
+      background: radial-gradient(
+         119.49% 119.49% at 2.96% 5.05%,
+         rgba(101, 101, 121, 0.5) 0%,
+         rgba(40, 40, 57, 0.5) 100%
+      );
+      box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      text-align: center;
+      padding: 15px 5px;
+      margin-top: 6px;
+      margin-left: 6px;
+      width: calc(100% / 2 - 6px);
+   }
+
+   &__top {
+      font-size: 60px;
+      line-height: 75px;
+      color: #ffffff;
+      span {
+         font-size: 30px;
+         line-height: 46px;
+      }
+   }
+
+   &__bottom {
+      font-size: 12px;
+      line-height: 96.1%;
+      color: #a5a5c2;
+   }
+}

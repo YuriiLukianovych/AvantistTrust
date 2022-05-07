@@ -1,11 +1,18 @@
 
 .header {
     height: 84px;
+    background: rgb(61,32,112);
+    background: linear-gradient(90deg, rgba(61,32,112,1) 0%, rgba(50,39,81,1) 100%);
+    border-bottom: 1px solid #494962;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
+    transition: transform 250ms linear;
+    &.hide{
+        transform: translateY(-84px);
+    }
     .container {
         height: 100%;
         display: flex;
@@ -15,20 +22,7 @@
             max-width: 100%;
         }
     }
-    &::before{
-        content: '';
-        display: block;
-        position: absolute;
-        width: 363px;
-        height: 78px;
-        left: 50%;
-        top: 50%;
-        border-radius: 50%;
-        background: #7000FF;
-        filter: blur(200px);
-        transform: translate(-80%, -80%);
-        pointer-events: none;
-    }
+
 }
 .logo {
     display: inline-flex;
@@ -152,8 +146,4 @@
 }
 .icon-cross{
     display: none;
-}
-
-main{
-    padding-top: 100px;
 }
