@@ -1,13 +1,14 @@
-.brand-name {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 61px;
-  .avantis {
-    color: #ffffff;
-  }
-  .trust {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    font-weight: 700;
-  }
+// brand-name
+.avantis {
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 61px;
+   color: #ffffff;
+}
+.trust {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 61px;
+   -webkit-text-fill-color: transparent;
+   -webkit-text-stroke: 1px #fff;
 }

@@ -1,0 +1,96 @@
+.about-us {
+   background: url('@img/about-us/bg-mobile.png') center center/320px 593px
+      no-repeat;
+
+   .container {
+      position: relative;
+      padding-top: 192px;
+      padding-bottom: 246px;
+   }
+   &__title {
+      max-width: 200px;
+      margin-left: 40px;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 30px;
+      .avantis,
+      .trust {
+         font-size: 30px;
+         line-height: 46px;
+      }
+   }
+
+   &__text {
+      font-size: 12px;
+      line-height: 96.1%;
+      color: #b6b6dd;
+      max-width: 235px;
+      margin-left: 40px;
+   }
+}
+
+.avantis-signal {
+   position: absolute;
+   left: 0;
+   top: 5px;
+   &__title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      right: 30%;
+      top: 60%;
+   }
+}
+.avantis-pump {
+   position: absolute;
+   left: 30%;
+   top: -30px;
+   &__title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      left: 30%;
+      top: 52%;
+   }
+}
+.avantis-education {
+   position: absolute;
+   right: 0;
+   top: 10%;
+   &__title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      left: 22%;
+      top: 58%;
+   }
+}
+.avantis-buying {
+   position: absolute;
+   left: 0;
+   bottom: 10%;
+   &__title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      left: 10px;
+      bottom: 26%;
+   }
+}
+.avantis-ambassador {
+   position: absolute;
+   right: 1%;
+   bottom: 15%;
+   &__title {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      position: absolute;
+      left: 15%;
+      bottom: 30%;
+   }
+}

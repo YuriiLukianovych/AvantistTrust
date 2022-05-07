@@ -1,34 +1,35 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 
 img {
-    display: block;
+   display: block;
 }
 
 ul,
 ol {
-    list-style: none;
+   list-style: none;
 }
 
 a {
-    text-decoration: none;
+   text-decoration: none;
 }
-button{
-    border: none;
-    outline: none;
-    cursor: pointer;
+button {
+   border: none;
+   outline: none;
+   cursor: pointer;
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 400;
-    background-color: #2B2B3D;
-    &.is-blocked{
-        overflow: hidden;
-    }
+   font-family: 'Titillium Web', sans-serif;
+   font-weight: 400;
+   background-color: #2b2b3d;
+   color: #ffffff;
+   &.is-blocked {
+      overflow: hidden;
+   }
 }
