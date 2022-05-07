@@ -1,1 +1,534 @@
-*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0;margin:0}img{display:block}ol,ul{list-style:none}a{text-decoration:none}button{border:none;outline:0;cursor:pointer}body{font-family:"Titillium Web",sans-serif;font-weight:400;background-color:#2b2b3d}body.is-blocked{overflow:hidden}.container{width:100%;padding:0 10px}.dn{display:none}.header{height:84px;position:fixed;top:0;left:0;width:100%;z-index:100}.header .container{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}.header .container.menu-open{max-width:100%}.header::before{content:"";display:block;position:absolute;width:363px;height:78px;left:50%;top:50%;border-radius:50%;background:#7000ff;-webkit-filter:blur(200px);filter:blur(200px);-webkit-transform:translate(-80%,-80%);-ms-transform:translate(-80%,-80%);transform:translate(-80%,-80%);pointer-events:none}.logo{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex}.no-webp .menu-container{background-image:url(../img/header/bg-mobile.png)}.menu-container{position:absolute;top:0;left:50%;-webkit-transform:translate(-50%,-100%);-ms-transform:translate(-50%,-100%);transform:translate(-50%,-100%);width:100vw;padding:80px 0 34px;background-color:#322751;background-repeat:no-repeat;background-position:calc(50% + 120px) bottom;border-bottom:1px solid #494962;z-index:2;-webkit-transition:-webkit-transform 250ms ease-in-out;transition:-webkit-transform 250ms ease-in-out;-o-transition:transform 250ms ease-in-out;transition:transform 250ms ease-in-out;transition:transform 250ms ease-in-out,-webkit-transform 250ms ease-in-out}.menu-container.is-open{-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0)}.site-navigation{max-width:320px;padding:0 10px;margin-left:auto;margin-right:auto}.menu-list{padding-left:24px}.menu-list__item:not(:last-child){margin-bottom:15px}.menu-list__link{position:relative;font-size:16px;line-height:24px;color:#b6b6dd;-webkit-transition:color 350ms ease-in-out;-o-transition:color 350ms ease-in-out;transition:color 350ms ease-in-out}.menu-list__link::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;border-radius:2px;background-color:#d46bfe;-webkit-transform:scaleX(0);-ms-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:left;-ms-transform-origin:left;transform-origin:left;-webkit-transition:-webkit-transform 350ms ease-in-out;transition:-webkit-transform 350ms ease-in-out;-o-transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out;transition:transform 350ms ease-in-out,-webkit-transform 350ms ease-in-out}.menu-list__link:focus::after,.menu-list__link:hover::after{-webkit-transform:scaleX(1);-ms-transform:scaleX(1);transform:scaleX(1)}.store-icon{width:44px;height:44px}.lang-btn{width:18px;height:21px;background-color:transparent;font-size:14px;line-height:21px;text-transform:uppercase;color:#d46bfe;position:absolute;top:31px;left:34px;z-index:3;-webkit-transform:translateY(-100px);-ms-transform:translateY(-100px);transform:translateY(-100px);-webkit-transition:-webkit-transform 250ms ease-in-out;transition:-webkit-transform 250ms ease-in-out;-o-transition:transform 250ms ease-in-out;transition:transform 250ms ease-in-out;transition:transform 250ms ease-in-out,-webkit-transform 250ms ease-in-out}.lang-btn.is-visible{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}.menu-button{width:44px;height:44px;background-color:transparent;position:absolute;top:20px;right:10px;z-index:3}.menu-button.is-open .icon-menu{display:none}.menu-button.is-open .icon-cross{display:block}.icon-menu{display:block}.icon-cross{display:none}main{padding-top:100px}@media screen and (min-width:320px){.container{max-width:320px;margin:0 auto}}@media screen and (max-width:1023px){.store-list{display:none}}.webp .menu-container{background-image:url(../img/header/bg-mobile.webp)}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  background-color: #2b2b3d;
+  color: #ffffff;
+}
+body.is-blocked {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.dn {
+  display: none;
+}
+
+.header {
+  height: 84px;
+  background: rgb(61, 32, 112);
+  background: linear-gradient(90deg, rgb(61, 32, 112) 0%, rgb(50, 39, 81) 100%);
+  border-bottom: 1px solid #494962;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: transform 250ms linear;
+}
+.header.hide {
+  transform: translateY(-84px);
+}
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header .container.menu-open {
+  max-width: 100%;
+}
+
+.logo {
+  display: inline-flex;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 100vw;
+  padding: 80px 0 34px;
+  background-color: #322751;
+  background-image: url("../img/header/bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 120px) bottom;
+  border-bottom: 1px solid #494962;
+  z-index: 2;
+  transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  transform: translate(-50%, 0);
+}
+
+.site-navigation {
+  max-width: 320px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-list {
+  padding-left: 24px;
+}
+.menu-list__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.menu-list__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #B6B6DD;
+  transition: color 350ms ease-in-out;
+}
+.menu-list__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #D46BFE;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms ease-in-out;
+}
+.menu-list__link:hover::after, .menu-list__link:focus::after {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 1023px) {
+  .store-list {
+    display: none;
+  }
+}
+.store-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.lang-btn {
+  width: 18px;
+  height: 21px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #D46BFE;
+  position: absolute;
+  top: 31px;
+  left: 34px;
+  z-index: 3;
+  transform: translateY(-100px);
+  transition: transform 250ms ease-in-out;
+}
+.lang-btn.is-visible {
+  transform: translateY(0);
+}
+
+.menu-button {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 3;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.icon-menu {
+  display: block;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.hero {
+  padding-top: 92px;
+  background: rgb(43, 43, 61);
+  background: radial-gradient(ellipse at top left, rgb(61, 32, 112) 0%, rgb(43, 43, 61) 60%);
+}
+.hero__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #b6b6dd;
+}
+.hero__image {
+  background-image: url("../img/hero/coin-left-mobile.png"), url("../img/hero/coin-right-mobile.png"), url("../img/hero/vector-mobile.svg"), url("../img/hero/bg-safe-mobile.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: left 10px top 200px, right 22px top 38px, center bottom 10px, center center;
+}
+.hero__image img {
+  max-width: 100%;
+}
+.hero__advantages {
+  margin-top: 41px;
+}
+
+.apps {
+  max-width: 300px;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.apps__left-side {
+  flex-basis: 140px;
+}
+.apps__note {
+  font-size: 12px;
+  line-height: 96.1%;
+  color: #8a8aa4;
+}
+.apps__qr {
+  flex-basis: 140px;
+}
+
+.app-store {
+  margin-bottom: 6px;
+}
+
+.google-play {
+  margin-bottom: 14px;
+}
+
+.advantages-list {
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -6px;
+  margin-left: -6px;
+}
+.advantages-list__item {
+  background: radial-gradient(119.49% 119.49% at 2.96% 5.05%, rgba(101, 101, 121, 0.5) 0%, rgba(40, 40, 57, 0.5) 100%);
+  box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  text-align: center;
+  padding: 15px 5px;
+  margin-top: 6px;
+  margin-left: 6px;
+  width: calc(50% - 6px);
+}
+.advantages-list__top {
+  font-size: 60px;
+  line-height: 75px;
+  color: #ffffff;
+}
+.advantages-list__top span {
+  font-size: 30px;
+  line-height: 46px;
+}
+.advantages-list__bottom {
+  font-size: 12px;
+  line-height: 96.1%;
+  color: #a5a5c2;
+}
+
+.about-us {
+  background: url("../img/about-us/bg-mobile.png") center center/320px 593px no-repeat;
+}
+.about-us .container {
+  position: relative;
+  padding-top: 192px;
+  padding-bottom: 246px;
+}
+.about-us__title {
+  max-width: 200px;
+  margin-left: 40px;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+}
+.about-us__title .avantis,
+.about-us__title .trust {
+  font-size: 30px;
+  line-height: 46px;
+}
+.about-us__text {
+  font-size: 12px;
+  line-height: 96.1%;
+  color: #b6b6dd;
+  max-width: 235px;
+  margin-left: 40px;
+}
+
+.avantis-signal {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.avantis-signal__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  right: 30%;
+  top: 60%;
+}
+
+.avantis-pump {
+  position: absolute;
+  left: 30%;
+  top: -30px;
+}
+.avantis-pump__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  left: 30%;
+  top: 52%;
+}
+
+.avantis-education {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.avantis-education__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  left: 22%;
+  top: 58%;
+}
+
+.avantis-buying {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+}
+.avantis-buying__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  left: 10px;
+  bottom: 26%;
+}
+
+.avantis-ambassador {
+  position: absolute;
+  right: 1%;
+  bottom: 15%;
+}
+.avantis-ambassador__title {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  left: 15%;
+  bottom: 30%;
+}
+
+.crypto-market {
+  padding-bottom: 12px;
+}
+.crypto-market .container {
+  background: url("../img/crypto-market/m-coin.svg") left 30px bottom -10px no-repeat, url("../img/crypto-market/l-coin.svg") right 15px bottom 350px no-repeat, url("../img/crypto-market/graphik-mobile.svg") center bottom 260px no-repeat;
+}
+.crypto-market__note {
+  font-size: 14px;
+  line-height: 96.1%;
+  color: #b6b6dd;
+  margin-top: 6px;
+  margin-bottom: 60px;
+  padding-left: 20px;
+}
+.crypto-market__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 480px;
+  margin-left: -7px;
+  margin-top: -7px;
+}
+.crypto-market__item {
+  position: relative;
+  background: radial-gradient(119.49% 119.49% at 2.96% 5.05%, rgb(101, 101, 121) 0%, rgb(40, 40, 57) 100%);
+  box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(21px);
+  border-radius: 12px;
+  padding: 45px 7px 10px;
+  width: calc(50% - 7px);
+  margin-left: 7px;
+  margin-top: 7px;
+}
+.crypto-market__item:nth-child(3) {
+  margin-top: 80px;
+}
+.crypto-market__item::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 11px;
+  top: 16px;
+  background: url("../img/crypto-market/up-arrow.svg") center center no-repeat;
+}
+.crypto-market__numbers {
+  background: #262637;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.15), inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 14px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+}
+.crypto-market__numbers span {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+}
+.crypto-market__numbers.accent {
+  color: #d46bfe;
+}
+.crypto-market__info {
+  font-size: 12px;
+  line-height: 96.1%;
+  color: #b6b6dd;
+}
+.crypto-market .title {
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.advantages {
+  padding-bottom: 25px;
+}
+.advantages .title {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  font-size: 22px;
+  line-height: 95%;
+  max-width: 200px;
+}
+.advantages .avantis,
+.advantages .trust {
+  font-size: 22px;
+}
+.advantages__image {
+  position: relative;
+}
+.advantages__image img {
+  max-width: 100%;
+}
+.advantages__item {
+  display: flex;
+}
+.advantages__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.advantages__item:hover svg, .advantages__item:focus svg {
+  color: #d46bfe;
+}
+.advantages__item:hover .advantages__caption, .advantages__item:focus .advantages__caption {
+  color: #d46bfe;
+}
+.advantages__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-right: 19px;
+  background: radial-gradient(119.49% 119.49% at 2.96% 5.05%, rgb(101, 101, 121) 0%, rgb(40, 40, 57) 100%);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+.advantages__icon svg {
+  width: 38px;
+  height: 38px;
+  color: #fff;
+  transition: color 250ms ease-in-out;
+}
+.advantages__caption {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 96.1%;
+  margin-bottom: 8px;
+  transition: color 250ms ease-in-out;
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 96.1%;
+  color: #b6b6dd;
+}
+
+.tariffs {
+  padding-top: 25px;
+}
+
+.avantis {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.trust {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 95%;
+  color: #ffffff;
+  border-left: 4px solid #d46bfe;
+  padding-left: 16px;
+}

@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Avantis Trust</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css?_v=20220506000004"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20220506000004">
+    <link rel="stylesheet" href="css/style.min.css" />
     <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap&_v=20220506000004" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <header class="header">
         <div class="container" data-header-container>
@@ -33,39 +36,379 @@
             <div class="menu-container" data-menu>
                 <nav class="site-navigation">
                     <ul class="menu-list">
-                        <li class="menu-list__item"><a href="#about-us" class="menu-list__link">О нас</a></li>
-                        <li class="menu-list__item"><a href="#advantages" class="menu-list__link">Преимущества</a></li>
-                        <li class="menu-list__item"><a href="#calc" class="menu-list__link">Тарифы и калькулятор</a></li>
-                        <li class="menu-list__item"><a href="#functional" class="menu-list__link">Функционал</a></li>
-                        <li class="menu-list__item"><a href="#ref-program" class="menu-list__link">Реферальная программа</a></li>
+                        <li class="menu-list__item">
+                            <a href="#about-us" class="menu-list__link" data-link>О нас</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#advantages" class="menu-list__link" data-link>Преимущества</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#calc" class="menu-list__link" data-link>Тарифы и калькулятор</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#functional" class="menu-list__link" data-link>Функционал</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#ref-program" class="menu-list__link" data-link>Реферальная программа</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
             <button class="lang-btn" type="button" data-lang>en</button>
             <button type="button" class="menu-button" data-menu-button>
-                <img class="icon-menu" src="img/svgicons/burger-menu.svg" alt="burger menu icon">
-                <img class="icon-cross" src="img/svgicons/burger-cross.svg" alt="burger cross icon">
+                <img class="icon-menu" src="img/svgicons/burger-menu.svg" alt="burger menu icon" />
+                <img class="icon-cross" src="img/svgicons/burger-cross.svg" alt="burger cross icon" />
             </button>
             <ul class="store-list">
                 <li class="store-list__item">
                     <a href="#" class="store-list__link">
-                        <img class="store-icon" src="img/svgicons/google-play.svg" alt="google-play">
+                        <img class="store-icon" src="img/svgicons/google-play.svg" alt="google-play" />
                     </a>
                 </li>
                 <li class="store-list__item">
                     <a href="#" class="store-list__link">
-                        <img class="store-icon" src="img/svgicons/app-store.svg" alt="app-store">
+                        <img class="store-icon" src="img/svgicons/app-store.svg" alt="app-store" />
                     </a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
-        <div class="container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, fugit? Quos qui provident esse reiciendis soluta. Delectus neque facilis sunt unde necessitatibus consequuntur eveniet laudantium odit dolores, voluptates nisi assumenda harum quae ut architecto eos at vero! Eius voluptate quasi, suscipit architecto, quis eaque id ipsa illo reiciendis dolorum, libero tempora sapiente saepe minima accusantium minus veritatis facere possimus voluptas assumenda. Eaque ratione omnis aut et, perferendis rem labore nemo maiores eos repellat repellendus voluptatem beatae. Aut, odio dolor. Ratione quod, non dolor quae accusamus sapiente error? Neque natus nobis vitae quibusdam, laborum sequi magni nam repudiandae voluptate non recusandae ipsa distinctio necessitatibus pariatur, reiciendis excepturi voluptates accusantium et? Iusto a similique assumenda saepe exercitationem quos suscipit eveniet ullam ipsa optio aut quidem deleniti doloremque molestias magnam quibusdam, fugiat laboriosam laudantium excepturi! Eveniet commodi quisquam earum dicta dolorum minima fugit quam dignissimos, quod similique aperiam, quas perspiciatis temporibus illum a neque odio corporis, mollitia esse iste quae in blanditiis? Ducimus, odio rerum aut tenetur exercitationem quae sit perferendis, repudiandae quo fugit asperiores iusto molestias explicabo laudantium provident perspiciatis culpa vitae. Aliquid magni dolorem esse, possimus quia explicabo quis quas fuga, voluptatem vitae commodi odio in id deserunt. Laborum, eum, vero labore fugit consequuntur error a quo, excepturi perferendis tenetur optio nam repellat molestias dolore! Eaque, ut deserunt ea quisquam doloremque impedit, maxime inventore illo quaerat tempora consectetur excepturi tempore at natus, praesentium ab recusandae dolore modi voluptatibus. Tempora dolorum illum possimus quis, pariatur a, quia aspernatur placeat magnam nisi eligendi veniam, ullam inventore voluptatibus officiis? Omnis, aperiam laboriosam! Aperiam architecto laboriosam mollitia assumenda asperiores cum magni quisquam voluptas, possimus dolores id consequuntur, temporibus eius totam maiores praesentium maxime voluptates pariatur consectetur minima suscipit? Fugit dolores ducimus optio eius delectus unde iste eum tempore. Officia illo atque reprehenderit minus enim, corrupti distinctio rem quibusdam, magni voluptatibus, dolorum iusto optio nulla expedita iste! Mollitia, cupiditate! Ea quidem harum error perferendis distinctio delectus aliquam ipsam magnam ex! Velit itaque facilis corporis quasi omnis tempora, consequuntur doloribus error. Quae, cumque sunt iure officiis omnis amet doloremque neque illo ea velit rem perspiciatis nesciunt, dolorum eligendi aut! Obcaecati nostrum vero nihil cum, tenetur commodi atque eaque, quis aliquam repellendus architecto distinctio nesciunt impedit laudantium. Dolor possimus ratione maiores animi nemo, commodi sapiente eum minus iure aliquam itaque quidem et consequatur a natus repellat alias qui error. Sit, facere ducimus nam sequi, provident libero, voluptatem pariatur ullam porro dolores itaque unde! Eveniet inventore fugit cupiditate, nam illo officia facilis autem quas repellat ipsam consequuntur neque! Modi, sequi accusamus eum quod aspernatur nam distinctio provident voluptate voluptas quos quo aperiam culpa iste dolorum. Veniam doloremque placeat molestias tenetur praesentium. Ab deleniti, explicabo nostrum quia incidunt consectetur culpa laboriosam nam? Totam, deserunt! Rerum et quis ut. Autem pariatur, ipsam magni saepe repellat aut dolorem sapiente qui quisquam, aliquid deserunt ut et quod maxime beatae quas consequuntur! Cumque tempora minima nam, itaque eum commodi. Natus voluptas et beatae omnis explicabo dolor impedit dolorem aspernatur, maxime sapiente iste ad excepturi modi laudantium blanditiis voluptatibus soluta exercitationem reiciendis iusto culpa dicta atque. Similique id cum tenetur explicabo quidem animi vitae dicta! Qui cum optio voluptatem ipsa soluta totam officia illo atque ex. Officiis, sed exercitationem unde eius aut quae amet sint eveniet officia at. Quos impedit dignissimos omnis recusandae nulla tenetur alias iure minus velit ipsam sapiente repudiandae possimus, ipsa consectetur facere quas tempore beatae eaque perspiciatis adipisci. Obcaecati delectus velit a dolorem ratione nostrum at porro quod assumenda dolorum vel corporis, eius ut fuga temporibus cumque eos natus atque harum perferendis ipsum, iste reiciendis ab. Commodi illum harum fuga assumenda sapiente? Nobis facere consectetur rerum facilis aliquam quibusdam, maiores ab! Repellat voluptas saepe cupiditate vitae porro est laborum maiores dicta, ducimus corrupti labore dolore voluptate consequatur doloremque vel earum sequi ipsam recusandae quidem impedit! Nulla nesciunt quos accusamus natus, ullam omnis assumenda tempore enim cum ipsam sed harum quidem repellendus sequi sint accusantium suscipit dignissimos corrupti veritatis dolores est maxime architecto quisquam eius! Pariatur excepturi, doloremque corporis eveniet itaque voluptates reprehenderit fuga quisquam libero dolor. Laboriosam ex pariatur nisi, molestiae, ducimus omnis enim odit incidunt, alias dicta corporis illum blanditiis non reiciendis distinctio error cum facere ullam aspernatur odio voluptatem! Est tempore ipsa, laboriosam voluptates culpa libero consequuntur eveniet modi. Tempore nostrum eveniet, voluptatibus atque asperiores sit harum ipsa ad earum similique natus accusantium, perferendis laudantium numquam neque exercitationem esse dicta nesciunt cumque maxime recusandae repudiandae officia cum unde? Obcaecati odit voluptatibus saepe dolorem dolore atque vero nam labore distinctio sequi quam officia repudiandae dicta quia consequatur aliquid, laboriosam nulla. Eaque ea qui fuga deleniti maxime, voluptas consectetur vitae, voluptates ipsum vero blanditiis repellat ipsam quo, pariatur dolore! Officia aspernatur nostrum voluptatibus corporis quae, ea placeat id nisi provident soluta possimus vel rem ab facere accusamus sunt fuga architecto odio ut magnam! Alias minus recusandae veniam quas dicta in hic reprehenderit iure facere, eius sed animi itaque sapiente possimus eveniet illum aspernatur aut delectus nam nobis! Debitis doloribus rerum id nam fuga? Esse, ratione facere ex iste laboriosam sit vero aliquid eum, inventore maxime pariatur iure voluptatum officia eligendi quam alias cupiditate? Incidunt sit commodi eligendi! Tempora vero natus culpa nemo sequi et iure aspernatur nesciunt totam ducimus doloremque deserunt repellendus odio, sapiente explicabo cumque omnis, temporibus, qui possimus quaerat nobis atque repudiandae quisquam. Porro molestias repudiandae deserunt nobis eligendi pariatur ratione praesentium distinctio totam cum! Mollitia rem illo sint? Tenetur, nam repellat fugit natus accusamus rem id animi similique reiciendis ducimus nihil iusto veniam quae sint ratione molestiae soluta sit quas! Nisi, veritatis tempore. Dignissimos, culpa soluta. Deleniti odit quasi, saepe, a ad eveniet eos laboriosam laborum voluptate voluptatem facilis. Provident, dignissimos fugit modi quisquam, molestias ducimus sed deleniti repellendus consectetur vel impedit! Tempore debitis aperiam blanditiis eligendi repellat officiis ad cum dolor accusamus rem incidunt excepturi fuga, unde voluptatem adipisci, autem est maxime, nemo laborum delectus numquam quaerat! Quaerat, impedit voluptas, quod dolore nostrum unde aliquid at vero nihil deleniti consequatur rem illum quidem nesciunt delectus? Vel, totam.
-        </div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__info">
+                    <h1 class="hero__title">
+                        <span class="avantis">Avantis </span><span class="trust">Trust</span>
+                    </h1>
+                    <p class="hero__text">
+                        Уникальный инвестиционный проект, объединяющий капитал
+                        частных инвесторов, знания и опыт лучшей команды аналитиков
+                        в сфере криптовалют
+                    </p>
+                </div>
+                <div class="hero__image">
+                    <img src="img/hero/hero-phones-mobile.png" alt="phones" />
+                </div>
+                <div class="hero__apps apps">
+                    <div class="apps__left-side">
+                        <img class="app-store" src="img/hero/app-store.svg" alt="app store" />
+                        <img class="google-play" src="img/hero/google-play.svg" alt="google play" />
+                        <p class="apps__note">
+                            *Наведите камеру и отсканируйте код чтобы скачать
+                            приложение
+                        </p>
+                    </div>
+                    <img class="apps__qr" src="img/hero/qr-mobile.svg" alt="qr-code for stores" />
+                </div>
+                <div class="hero__advantages">
+                    <ul class="advantages-list">
+                        <li class="advantages-list__item">
+                            <p class="advantages-list__top"><span>$</span>100</p>
+                            <p class="advantages-list__bottom">инвестиции от</p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <p class="advantages-list__top"></p>
+                            <p class="advantages-list__bottom">
+                                Автоматизированная работа
+                            </p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <p class="advantages-list__top"><span>0,3-1,8%</span></p>
+                            <p class="advantages-list__bottom">доходность в день</p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <p class="advantages-list__top"></p>
+                            <p class="advantages-list__bottom">
+                                Удобный функционал бота
+                            </p>
+                        </li>
+                        <li class="advantages-list__item">
+                            <p class="advantages-list__top">12</p>
+                            <p class="advantages-list__bottom">
+                                инвестиционных планов
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <h2 class="about-us__title">Что такое <span class="avantis">Avantis</span><span class="trust"></span>
+                    Trust?</span></h2>
+                <p class="about-us__text">
+                    Avantis Trust- альтернативные инвестиции. Суть заключается в том, что ваши деньги направляются на
+                    все виды деятельности
+                    компании. Это Фонд, который поддерживает все продукты компании.
+                </p>
+                <div class="avantis-signal">
+                    <img src="img/about-us/signal.svg" alt="avantis-signal">
+                    <h3 class="avantis-signal__title">Avantis Signal</h3>
+                </div>
+                <div class="avantis-pump">
+                    <img src="img/about-us/pump.svg" alt="avantis-pump">
+                    <h3 class="avantis-pump__title">Avantis Pump</h3>
+                </div>
+                <div class="avantis-education">
+                    <img src="img/about-us/education.svg" alt="avantis-education">
+                    <h3 class="avantis-education__title">Avantis Education</h3>
+                </div>
+                <div class="avantis-buying">
+                    <img src="img/about-us/buying.svg" alt="avantis-buying">
+                    <h3 class="avantis-buying__title">Avantis Buying</h3>
+                </div>
+                <div class="avantis-ambassador">
+                    <img src="img/about-us/ambassador.svg" alt="avantis-ambassador">
+                    <h3 class="avantis-ambassador__title">Ambassador Program</h3>
+                </div>
+            </div>
+        </section>
+        <section class="crypto-market">
+            <div class="container">
+                <h2 class="title">Рынок криптовалют в 2021 году</h2>
+                <p class="crypto-market__note">Темпы роста криптовалют ускоряются благодаря вовлечению профессиональных
+                    инвесторов с классических рынков. Новым трендом
+                    является и то, что крупные компании и банки (например, Tesla, Square Inc, MicroStrategy Inc. и
+                    прочие) становятся
+                    держателями криптовалюты
+                </p>
+                <ul class="crypto-market__list">
+                    <li class="crypto-market__item">
+                        <div class="crypto-market__numbers">$<span> 100 </span>МЛРД</div>
+                        <p class="crypto-market__info">инвестировано в рынок криптовалют</p>
+                    </li>
+                    <li class="crypto-market__item">
+                        <div class="crypto-market__numbers">$<span>2 </span>ТРЛН</div>
+                        <p class="crypto-market__info">общая стоимость цифровых активов</p>
+                    </li>
+                    <li class="crypto-market__item">
+                        <div class="crypto-market__numbers accent">на<span>240</span>%</div>
+                        <p class="crypto-market__info">выросла стоимость крипто активов в 2021 году</p>
+                    </li>
+                    <li class="crypto-market__item">
+                        <div class="crypto-market__numbers">в<span> 17 </span>РАЗ</div>
+                        <p class="crypto-market__info">вырос рынок криптовалют в 2021 году</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <div class="advantages__image">
+                    <h2 class="title">Преимущества инвестирования
+                        вместе с <br><span class="avantis">Avantis</span><span class="trust"> Trust</span></h2>
+                    <picture>
+                        <source srcset="
+                                    img/advantages/hand-screen-mobile.webp  1x,
+                                    img/advantages/hand-screen-mobile@2x.webp  2x
+                                " media="(min-width: 320px) and (max-width: 767px)" type="image/webp" />
+                        <source srcset="
+                                    img/advantages/hand-screen-mobile.png  1x,
+                                    img/advantages/hand-screen-mobile@2x.png  2x
+                                " media="(min-width: 320px) and (max-width: 767px)" />
+
+                        <!-- <source srcset="
+                                    img/img1-tablet.webp  1x,
+                                    img/img1-tablet@2x.webp  2x
+                                " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                        <source srcset="
+                                    img/img1-tablet.jpg  1x,
+                                    img/img1-tablet@2х.jpg  2x
+                                " media="(min-width: 768px) and (max-width: 1199px)" /> -->
+
+                        <!-- <source srcset="
+                                    img/img-desk.webp  1x,
+                                    img/img1-desk@2x.webp  2x
+                                " media="(min-width: 1200px)" type="image/webp" />
+                        <source srcset="
+                                    img/img1-desk.jpg  1x,
+                                    img/img1-desk@2х.jpg  2x
+                                " media="(min-width: 1200px)" /> -->
+
+                        <img src="img/advantages/hand-screen-mobile.png" alt="tablet in hand">
+                    </picture>
+                </div>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#01"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Лучшие трейдеры и аналитики</h3>
+                            <p class="advantages__text">Avantis проводит тщательный отбор всех сотрудников, HR совместно
+                                с нашим отделом андеррайтинга исследуют каждого
+                                кандидата по более 100 параметрам.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#02"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Прозрачность</h3>
+                            <p class="advantages__text">Мы предоставляем обширную документальную базу, где объяснены все
+                                юридические аспекты взаимодействия Avantis и её
+                                партнёров.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#03"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Удобство пользовательского интерфейса
+                            </h3>
+                            <p class="advantages__text">Мы отказались от платформы. В связи с ненадобностью наших
+                                инвесторов непосредственно участвовать в торгах, команда
+                                Avantis создала Telegram-бот, который будет иметь все необходимые инструменты для
+                                контроля своих финансов.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#04"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Низкие транзакционные издержки
+                            </h3>
+                            <p class="advantages__text">Децентрализация процесса обмена крипто активами, позволяет
+                                снизить комиссии, благодаря исключению посредников.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#05"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Быстрые финансовые операции
+                            </h3>
+                            <p class="advantages__text">Операции в блокчейне используются практически мгновенно, а
+                                системы смарт контрактов автоматизируют остальные процессы.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages__icon">
+                            <svg>
+                                <use href="img/advantages/sprite.svg#06"></use>
+                            </svg>
+                        </div>
+                        <div class="advantages__info">
+                            <h3 class="advantages__caption">Диверсификация рисков</h3>
+                            <p class="advantages__text">Avantis Trust позволяет вложить свои средства не в одну
+                                стратегию, а в несколько. Таким образом, распределение
+                                (диверсификация) дает возможность получать большую прибыль и снижает риск проседания
+                                капитала.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tariffs" id="tariffs">
+            <div class="container">
+                <h2 class="title">Инвестиционные планы <span class="avantis">Avantis</span><span
+                        class="trust">Trust</span></h2>
+                <div class="tariffs__table-wrapper">
+                    <table class="tariffs__table">
+                        <thead>
+                            <tr>
+                                <th>Депозит, USD</th>
+                                <th>50 дней,% за день</th>
+                                <th>100 дней,% в день</th>
+                                <th>365 дней,% в день</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>100-2000</td>
+                                <td>0,3-0,4</td>
+                                <td>0,5-0,6</td>
+                                <td>0,7-0,8</td>
+                            </tr>
+                            <tr>
+                                <td>2001-5000</td>
+                                <td>0,4-0,5</td>
+                                <td>0,7-0,8</td>
+                                <td>0,9-1</td>
+                            </tr>
+                            <tr>
+                                <td>5001-25000</td>
+                                <td>0,6-0,7</td>
+                                <td>1-1,1</td>
+                                <td>1,2-1,3</td>
+                            </tr>
+                            <tr>
+                                <td>25001 и выше</td>
+                                <td>0,8-0,9</td>
+                                <td>1,2-1,3</td>
+                                <td>1,6-1,8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="tariffs__note">*Первоначальные инвестиции возвращаются в конце срока действия тарифа</p>
+                <div class="calculator">
+                    <h3 class="calculator__title">Рассчитай свою потенциальную прибыль</h3>
+                    <div class="calculator__body">
+                        <form action="" class="calculator__form">
+                            <h4 class="calculator__caption">Выберите период</h4>
+                            <div class="calculator__tariff">
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff50">
+                                <label class="calculator__input-radio-label" for="tariff50">50 дней</label>
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff100">
+                                <label class="calculator__input-radio-label" for="tariff100">100 дней</label>
+                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff365">
+                                <label class="calculator__input-radio-label" for="tariff365">365 дней</label>
+                            </div>
+                            <div class="calculator__total">
+                                <input type="number" name="total" id="total">
+                                <label for="total" class="calculator__input-number-label">Введите сумму
+                                    инвестиции</label>
+                            </div>
+                            <div class="calculator__input-range-wrapper">
+                                <label for="input-range" class="calculator__input-range-label">Быстрый выбор
+                                    суммы</label>
+                                <p class="calculator__input-range-value"><span>252</span> usd</p>
+                                <input class="calculator__input-range" type="range" name="input-range" id="input-range"
+                                    value="252" min="100" max="1000000">
+                                <p class="range__min-value"><span>100</span> usd</p>
+                                <p class="range__max-value"><span>1000000</span> usd</p>
+                            </div>
+                            <button class="calculator__submit" type="submit">Инвестировать сейчас</button>
+                        </form>
+                        <div class="calculator__result result">
+                            <h4 class="calculator__caption">Предварительный расчет</h4>
+                            <ul class="result__list">
+                                <li class="result__item"><span>15</span>$/ в день</li>
+                                <li class="result__item"><span>150</span>$/ в неделю</li>
+                                <li class="result__item"><span>1500</span>$/ в месяц</li>
+                                <li class="result__item"><span>15000</span>$/в год</li>
+                            </ul>
+                            <div class="result__footer">
+                                <p class="result__procent-label">Ежедневный процент</p>
+                                <strong class="result__procent">1,2%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="js/app.min.js?_v=20220506000004"></script>
+    <script src="js/app.min.js"></script>
 </body>
+
 </html>
