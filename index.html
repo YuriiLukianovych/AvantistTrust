@@ -43,7 +43,7 @@
                             <a href="#advantages" class="menu-list__link" data-link>Преимущества</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#calc" class="menu-list__link" data-link>Тарифы и калькулятор</a>
+                            <a href="#tariffs" class="menu-list__link" data-link>Тарифы и калькулятор</a>
                         </li>
                         <li class="menu-list__item">
                             <a href="#functional" class="menu-list__link" data-link>Функционал</a>
@@ -374,7 +374,7 @@
                                 <label class="calculator__input-radio-label" for="tariff365">365 дней</label>
                             </div>
                             <div class="calculator__total">
-                                <input type="number" name="total" id="total">
+                                <input type="number" name="total" id="total" min="100" max="1000000" step="100">
                                 <label for="total" class="calculator__input-number-label">Введите сумму
                                     инвестиции</label>
                             </div>
