@@ -43,7 +43,7 @@
                             <a href="#advantages" class="menu-list__link" data-link>Преимущества</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#calc" class="menu-list__link" data-link>Тарифы и калькулятор</a>
+                            <a href="#tariffs" class="menu-list__link" data-link>Тарифы и калькулятор</a>
                         </li>
                         <li class="menu-list__item">
                             <a href="#functional" class="menu-list__link" data-link>Функционал</a>
@@ -366,26 +366,32 @@
                         <form action="" class="calculator__form">
                             <h4 class="calculator__caption">Выберите период</h4>
                             <div class="calculator__tariff">
-                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff50">
+                                <input class="calculator__input-radio" type="radio" name="tariff" value="50"
+                                    id="tariff50">
                                 <label class="calculator__input-radio-label" for="tariff50">50 дней</label>
-                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff100">
+                                <input class="calculator__input-radio" type="radio" name="tariff" value="100"
+                                    id="tariff100">
                                 <label class="calculator__input-radio-label" for="tariff100">100 дней</label>
-                                <input class="calculator__input-radio" type="radio" name="tariff" id="tariff365">
+                                <input class="calculator__input-radio" type="radio" name="tariff" value="365"
+                                    id="tariff365">
                                 <label class="calculator__input-radio-label" for="tariff365">365 дней</label>
                             </div>
                             <div class="calculator__total">
-                                <input type="number" name="total" id="total">
-                                <label for="total" class="calculator__input-number-label">Введите сумму
-                                    инвестиции</label>
+                                <input class="calculator__input-number" placeholder="Введите сумму инвестиции"
+                                    type="number" name="total" id="total" min="100" max="1000000" step="100">
+                                <p class="calculator__note">*Минимальная сумма инвестиции 100 USD</p>
                             </div>
                             <div class="calculator__input-range-wrapper">
                                 <label for="input-range" class="calculator__input-range-label">Быстрый выбор
                                     суммы</label>
-                                <p class="calculator__input-range-value"><span>252</span> usd</p>
-                                <input class="calculator__input-range" type="range" name="input-range" id="input-range"
-                                    value="252" min="100" max="1000000">
-                                <p class="range__min-value"><span>100</span> usd</p>
-                                <p class="range__max-value"><span>1000000</span> usd</p>
+                                <div class="range-wrapper">
+                                    <p class="calculator__input-range-value"><span>280000</span> usd</p>
+                                    <div class="range__progress"></div>
+                                    <input class="calculator__input-range" type="range" name="input-range"
+                                        id="input-range" value="280000" min="100" max="1000000" step="100">
+                                    <p class="range__min-value"><span>100</span> usd</p>
+                                    <p class="range__max-value"><span>1000000</span> usd</p>
+                                </div>
                             </div>
                             <button class="calculator__submit" type="submit">Инвестировать сейчас</button>
                         </form>
